@@ -1,6 +1,6 @@
 # Image-Captioning-Generation
 
-## This AI project was developed as part of the Data Mining course by Hoang Anh Thu and Nguyen Thuy Dung 
+### This AI project was developed as part of the Data Mining course by Hoang Anh Thu and Nguyen Thuy Dung 
 
 ## The goal of this project is to build an image captioning model that automatically generates descriptive sentences for images by combining Convolutional Neural Networks (CNNs) and Long Short-Term Memory (LSTM) networks.
 
