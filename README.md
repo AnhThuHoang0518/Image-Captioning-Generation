@@ -8,6 +8,7 @@ This AI project was developed as part of the Data Mining course by Hoang Anh Thu
 
 ## Table of Contents
 - [Overview](#overview)
+- [Dataset](#dataset)
 - [Reference](#reference)
 - [Key Improvements](#key-improvements)
 - [Artifacts](#artifacts)
@@ -23,6 +24,12 @@ The goal of this project is to build an image captioning model that learns visua
 - An LSTM decoder generates captions token by token from the encoded features.
 
 This repository includes both a baseline implementation and an improved training pipeline designed to enhance generalization and prevent data leakage.
+
+---
+
+## Dataset
+We use the Flickr8k dataset:
+- Flickr8k dataset (Kaggle): [https://www.kaggle.com/datasets/adityajn105/flickr8k](https://www.kaggle.com/datasets/adityajn105/flickr8k)
 
 ---
 
@@ -56,9 +63,8 @@ For a detailed walkthrough of the updated workflow, see:
 ## How to Run
 1. Clone this repository.
 2. Open the provided notebooks in your preferred environment (e.g., Jupyter or Colab).
-3. Follow the instructions within the notebooks and in [PIPELINE_RESTRUCTURE.md](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/PIPELINE_RESTRUCTURE.md) for data preparation, training, and evaluation.
+3. Download the Flickr8k dataset from Kaggle and follow the instructions within the notebooks and in [PIPELINE_RESTRUCTURE.md](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/PIPELINE_RESTRUCTURE.md) for data preparation.
 4. Review generated captions and compare baseline vs. improved pipeline behavior.
-
 
 ---
 
