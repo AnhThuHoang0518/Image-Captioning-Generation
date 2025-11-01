@@ -59,7 +59,6 @@ For a detailed walkthrough of the updated workflow, see:
 3. Follow the instructions within the notebooks and in [PIPELINE_RESTRUCTURE.md](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/PIPELINE_RESTRUCTURE.md) for data preparation, training, and evaluation.
 4. Review generated captions and compare baseline vs. improved pipeline behavior.
 
-Note: Dependencies and exact versions are indicated within the notebooks and documentation.
 
 ---
 
