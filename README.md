@@ -57,7 +57,7 @@ For a detailed of the workflow, see: [SUGGEST_FOR_IMPROVEMENT.md](https://github
 ## Artifacts
 - Our Code: [icg.ipynb](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/icg.ipynb)
 - Idea for Data Augmentation: [data_augmentation_eg.png](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/data_augmentation_eg.png)
-- Model Architecture Suggestion: [model_suggestion.png](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/model_suggestion.png)
+- Model Architecture Suggestion: [model_architecture_suggestion.png](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/model_architecture_suggestion.png)
 
 ---
 
