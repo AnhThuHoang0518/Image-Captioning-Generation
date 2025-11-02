@@ -68,6 +68,41 @@ For a detailed walkthrough of the updated workflow, see:
 
 ---
 
+## Translate Vietnamese to English (Notebooks)
+
+This repository includes a tool to translate Vietnamese text in Jupyter notebooks to English. The tool translates markdown cells, comments, and docstrings while preserving the executable code logic.
+
+### Installation
+
+For better translation quality (optional):
+```bash
+pip install deep-translator
+```
+
+The script works without `deep-translator` by using a fallback dictionary, but translation quality will be limited to common ML/development terms.
+
+### Usage
+
+To translate a notebook:
+```bash
+python tools/translate_vi_en_notebook.py <input.ipynb> <output.ipynb>
+```
+
+Example:
+```bash
+python tools/translate_vi_en_notebook.py final_22.ipynb final_22_en.ipynb
+```
+
+### Notes
+
+- The script translates markdown cells, comments (lines starting with `#`), and docstrings only.
+- Code logic and executable statements remain unchanged.
+- Identifier renaming uses a small safe mapping and should be extended cautiously if needed.
+- When `deep-translator` is installed, the tool uses Google Translate for higher quality translations.
+- Without `deep-translator`, the tool falls back to a built-in dictionary covering common ML and development terms.
+
+---
+
 ## Results
 - The improved pipeline leverages data augmentation and strict dataset splitting to enhance robustness and avoid leakage.
 - Qualitative examples and comparisons are available within the slide and notebooks.
