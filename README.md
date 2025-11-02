@@ -55,7 +55,8 @@ For a detailed walkthrough of the updated workflow, see:
 ---
 
 ## Artifacts
-- Updated Pipeline (Improved Process): See [Pipeline Restructure](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/PIPELINE_RESTRUCTURE.md)
+- Updated Pipeline (Improved Process): [final_22_en](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/final_22_en.ipynb)
+See [Pipeline Restructure](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/PIPELINE_RESTRUCTURE.md)
 - Original Code (Baseline): [baseline.ipynb](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/baseline.ipynb)
 
 ---
