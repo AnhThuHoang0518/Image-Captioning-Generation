@@ -191,13 +191,23 @@ def rename_identifiers_in_code(lines: List[str]) -> List[str]:
     return [IDENTIFIER_REGEX.sub(repl, ln) for ln in lines]
 
 def process_notebook(in_path: str, out_path: str):
-    with open(in_path, "r", encoding="utf-8") as f:
-        nb = json.load(f)
+    try:
+        with open(in_path, "r", encoding="utf-8") as f:
+            nb = json.load(f)
+    except FileNotFoundError:
+        print(f"Error: Input file '{in_path}' not found.")
+        sys.exit(1)
+    except json.JSONDecodeError as e:
+        print(f"Error: Input file '{in_path}' is not a valid JSON notebook: {e}")
+        sys.exit(1)
+    except Exception as e:
+        print(f"Error reading input file '{in_path}': {e}")
+        sys.exit(1)
 
     for cell in nb.get("cells", []):
         src = cell.get("source", [])
         if isinstance(src, str):
-            src = src.splitlines(keepends=False)
+            src = src.splitlines(keepends=True)
 
         if cell.get("cell_type") == "markdown":
             cell["source"] = translate_markdown_lines(src)
@@ -206,8 +216,12 @@ def process_notebook(in_path: str, out_path: str):
             translated = rename_identifiers_in_code(translated)
             cell["source"] = translated
 
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(nb, f, ensure_ascii=False, indent=1)
+    try:
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(nb, f, ensure_ascii=False, indent=1)
+    except Exception as e:
+        print(f"Error writing output file '{out_path}': {e}")
+        sys.exit(1)
 
 def main():
     if len(sys.argv) < 3:
