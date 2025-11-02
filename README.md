@@ -10,7 +10,7 @@ This AI project was developed as part of the Data Mining course by Hoang Anh Thu
 - [Overview](#overview)
 - [Dataset](#dataset)
 - [Reference](#reference)
-- [Key Improvements](#key-improvements)
+- [Suggest For Improvements](#suggest-for-improvements)
 - [Artifacts](#artifacts)
 - [How to Run](#how-to-run)
 - [Results](#results)
@@ -39,8 +39,7 @@ This project was inspired by the Image Captioning tutorial:
 
 ---
 
-## Key Improvements cần chuyển thành Suggest For Improvements
-The improved process introduces stronger training hygiene and generalization:
+## Suggest For Improvements
 - Data augmentation:
   - Horizontal flipping
   - Random cropping
@@ -48,14 +47,17 @@ The improved process introduces stronger training hygiene and generalization:
 - Leakage prevention:
   - Split the dataset into train/validation/test before applying augmentation
   - Fit the tokenizer only on training captions
+- BiLSTM → GRU:
+  - Faster training and lower memory usage
 
-For a detailed walkthrough of the updated workflow, see:
-- Overview of the update process: [PIPELINE_RESTRUCTURE.md](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/PIPELINE_RESTRUCTURE.md)
+For a detailed of the workflow, see: [SUGGEST_FOR_IMPROVEMENT.md](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/SUGGEST_FOR_IMPROVEMENT.md)
 
 ---
 
 ## Artifacts
-- Our Code (Baseline): [baseline.ipynb](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/baseline.ipynb)
+- Our Code (Baseline): [icg.ipynb](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/icg.ipynb)
+- Idea for Data Augmentation: [data_augmentation_eg.png](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/data_augmentation_eg.png)
+- Model Architecture Suggestion: [model_suggestion.png](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/model_suggestion.png)
 
 ---
 
@@ -63,12 +65,12 @@ For a detailed walkthrough of the updated workflow, see:
 1. Clone this repository.
 2. Open the provided notebooks in your preferred environment (e.g., Jupyter or Colab).
 3. Download the Flickr8k dataset from Kaggle
-4. Có thể tiếp tục làm Improvements để compare vs baseline
+4. Apply the proposed improvements to enable comparison with the baseline implementation.
 
 
 ## Results
-- Code của chúng tôi có kết quả tốt hơn so với reference 1 chút khi train lại model.
-- Có ý tưởng để làm thêm improvement để cải thiện capabilities hơn nx
+- Our retrained model achieved slightly better performance compared to the reference implementation.
+- Further improvement ideas have been proposed to enhance the model’s captioning capabilities even more.
 
 ---
 
