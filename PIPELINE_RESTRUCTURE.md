@@ -11,9 +11,9 @@
 | 5 | **Data Augmentation (Train Only)** | 🔄 To Update | **TRAIN SET ONLY** - Use ImageDataGenerator for augmentation_factor=1-3 |
 | 6 | **Feature Extraction** | 🔄 To Update | **MOVED AFTER AUGMENTATION** - Extract features for train(original+aug) + test(original) |
 | 7 | **Data Generator** | ✅ No Change | Generate batches (image_feature, in_seq) → out_seq |
-| 8 | **Model Training (GRU)** | ✅ Updated | Switched from BiLSTM to GRU to reduce parameters and speed up training with comparable performance |
+| 8 | **Model Training (GRU)** | 🔄 To Update | Switched from BiLSTM to GRU to reduce parameters and speed up training with comparable performance |
 | 9 | **Evaluation (BLEU)** | ✅ No Change | BLEU-1, BLEU-2 on test set |
-| 10 | **Caption Generation** | ✅ No Change | Generate captions for test images |
+
 
 
 ## 🧠 **ARCHITECTURE UPDATE DETAILS (BiLSTM → GRU)**
