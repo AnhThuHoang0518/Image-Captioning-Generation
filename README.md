@@ -39,7 +39,7 @@ This project was inspired by the Image Captioning tutorial:
 
 ---
 
-## Key Improvements
+## Key Improvements cần chuyển thành Suggest For Improvements
 The improved process introduces stronger training hygiene and generalization:
 - Data augmentation:
   - Horizontal flipping
@@ -55,57 +55,20 @@ For a detailed walkthrough of the updated workflow, see:
 ---
 
 ## Artifacts
-- Updated Pipeline (Improved Process): [final_22_en.ipynb](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/final_22_en.ipynb)
-- Original Code (Baseline): [baseline.ipynb](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/baseline.ipynb)
+- Our Code (Baseline): [baseline.ipynb](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/baseline.ipynb)
 
 ---
 
 ## How to Run
 1. Clone this repository.
 2. Open the provided notebooks in your preferred environment (e.g., Jupyter or Colab).
-3. Download the Flickr8k dataset from Kaggle and follow the instructions within the notebooks and in [PIPELINE_RESTRUCTURE.md](https://github.com/AnhThuHoang0518/Image-Captioning-Generation/blob/main/PIPELINE_RESTRUCTURE.md) for data preparation.
-4. Review generated captions and compare baseline vs. improved pipeline behavior.
+3. Download the Flickr8k dataset from Kaggle
+4. Có thể tiếp tục làm Improvements để compare vs baseline
 
----
-
-## Translate Vietnamese to English (Notebooks)
-
-This repository includes a tool to translate Vietnamese text in Jupyter notebooks to English. The tool translates markdown cells, comments, and docstrings while preserving the executable code logic.
-
-### Installation
-
-For better translation quality (optional):
-```bash
-pip install deep-translator
-```
-
-The script works without `deep-translator` by using a fallback dictionary, but translation quality will be limited to common ML/development terms.
-
-### Usage
-
-To translate a notebook:
-```bash
-python tools/translate_vi_en_notebook.py <input.ipynb> <output.ipynb>
-```
-
-Example:
-```bash
-python tools/translate_vi_en_notebook.py final_22.ipynb final_22_en.ipynb
-```
-
-### Notes
-
-- The script translates markdown cells, comments (lines starting with `#`), and docstrings only.
-- Code logic and executable statements remain unchanged.
-- Identifier renaming uses a small safe mapping and should be extended cautiously if needed.
-- When `deep-translator` is installed, the tool uses Google Translate for higher quality translations.
-- Without `deep-translator`, the tool falls back to a built-in dictionary covering common ML and development terms.
-
----
 
 ## Results
-- The improved pipeline leverages data augmentation and strict dataset splitting to enhance robustness and avoid leakage.
-- Qualitative examples and comparisons are available within the slide and notebooks.
+- Code của chúng tôi có kết quả tốt hơn so với reference 1 chút khi train lại model.
+- Có ý tưởng để làm thêm improvement để cải thiện capabilities hơn nx
 
 ---
 
