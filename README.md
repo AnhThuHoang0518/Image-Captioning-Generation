@@ -65,7 +65,7 @@ For a detailed of the workflow, see: [SUGGEST_FOR_IMPROVEMENT.md](https://github
 1. Clone this repository.
 2. Open the provided notebooks in your preferred environment (e.g., Jupyter or Colab).
 3. Download the Flickr8k dataset from Kaggle
-4. Apply the proposed improvements to enable comparison with the baseline implementation.
+4. The proposed improvements can be applied to enable comparison with the baseline implementation.
 
 
 ## Results
