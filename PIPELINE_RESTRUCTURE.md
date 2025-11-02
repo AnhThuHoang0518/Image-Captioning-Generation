@@ -1,5 +1,4 @@
-# Image Captioning Pipeline Restructure
-
+# SUGGEST FOR IMPROVEMENT
 ## 📋 **NEW PIPELINE WORKFLOW**
 
 | Step | Description | Status | Changes & Rationale |
